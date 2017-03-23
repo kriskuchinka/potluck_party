@@ -1,0 +1,21 @@
+To Do: Potluck Party
+
+--> Add php file specifically to make sending email of "additional comments" to my email address
+
+--> Create JS validation for the form on each modal window
+
+--> Once desktop version is finished, make media queries for tablet size and phone size
+
+--> Use RegEx to make phone number in (xxx)xxx-xxxx format
+
+--> Use RegEx to make email in xxxx@xxx.com format
+
+--> Make JS checkboxes display checked or not checked in Data Form field
+
+--> ????? Set up SQL DB once PHP is implemented ?????
+
+--> Have JS entered data display appropriate words in data form in the event that a drop down menu or checkbox is not filled in correctly
+
+--> Try to get a slim border around the checkboxes, maybe make them a bit bigger.
+
+--> Make Additional Comments box responsive (it over-extended on the tv screen, when reduced to half size and 5/6 height of the screen)

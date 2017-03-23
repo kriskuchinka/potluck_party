@@ -1,0 +1,296 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "blooming elegant sans";
+    letter-spacing: .05em;
+}
+
+body {
+	background-color: #D6DEE3;
+	z-index: 0;
+}
+
+.info-graphic {
+	width: 100%;
+    height: 1em;
+}
+
+.fa-info {
+	float: right;
+	margin-top: 0.8em;
+    margin-right: 0.8em;
+	cursor: pointer;
+}
+
+.explaination-window {
+	display: none;
+	width: 92%;	
+	line-height: 1.2em;
+	margin: 0 4%;
+}
+
+#main-head {
+	text-align: center;
+	color: red;
+    font-size: 4em;;
+    margin-top: 1.4em;	
+}
+
+.finished-header {
+	text-align: center;
+	color: red;
+    font-size: 2.5em;
+	margin-top: 1.4em;
+}
+
+.welcome-text {
+	text-align: center;
+    font-size: 2.4em;	
+}
+
+.welcome-heading {
+ 	margin-top: .8em;
+    line-height: 1em;
+    font-size: 2em;
+}
+
+.welcome-info {
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.fireworks-img {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+    margin-top: 1em;
+    border: solid .5em black;
+    border-radius: .6em;
+}
+
+.progress-bar {
+	display: none;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	background-color: gray;
+    height: 2em;
+    border-radius: 1em;
+    margin-top: 1em;
+    border: .2em solid black;    
+}
+
+.progress {
+	transition: all 2s;
+	background-color: red;
+    height: 1.6em;
+    border-radius: 1em;
+    width: 0;
+}
+
+.form-modal {
+	z-index: 100;
+}
+
+.form-format {
+	text-align: left;
+	padding: .6em;
+	margin: .4em;
+    width: 40%;
+}
+
+input.form-format {
+    font-size: 1.4em;
+    cursor: pointer;
+    border-radius: .4em;
+    border: .2em solid black;    
+}
+
+.dish-choices, .serving-size {
+	border-radius: .4em;
+	font-size: 1.4em;
+}
+
+.progress-text {
+	color: white;
+	text-align: center;	
+	position: absolute;
+	width: 20%;
+	left: 40%;
+	right: 40%;	
+    font-size: 1.6em;
+}
+
+.exit {
+	text-align: right;
+	color: white;
+	cursor: pointer;
+	margin: -.6em -.6em .4em 0em;
+}
+
+.suggestions {
+	border-radius: .4em;
+}
+
+textarea.suggestions {
+	font-size: 2em;
+	cursor: pointer;
+    border: .2em solid black;
+    padding: .5em;	
+}
+
+.modal-window {
+	position: relative;
+	border-style: solid;
+	border: solid .2em black;
+    height: 36em;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	margin-top: 5%; 
+	display: none;
+	box-shadow: .6em .6em .6em #888888;
+	border-radius: .8em;
+	padding: 3em;
+}
+
+h1.modal-text {
+	text-decoration: underline;
+}
+
+.modal-text {
+    text-align: center;
+    font-size: 2.4em;
+    margin-bottom: .6em;    	
+}
+
+.modal-subtext {
+	text-align: center;
+	font-size: 1.6em;
+    margin-bottom: .6em;
+}
+
+.drop-down {
+	text-align: center;
+}
+
+.dish-choices, .serving-size {
+    margin: .3em;
+    width: 10em;
+    font-size: 1.4em;
+    cursor: pointer;
+    border-radius: .4em;
+    border: .2em solid black;    
+}
+
+.form-modal-1 {
+	text-align: center;
+}
+
+.dish-choices option, .serving-size option {
+	background-color: white;
+}
+
+.site-button {
+	margin: auto;
+    display: block;
+    background-color: red;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .4em;
+    font-size: 1.8em;
+    box-shadow: .4em .4em .4em #888888;
+    border-radius: .4em;
+    cursor: pointer;
+    border: .15em solid black;
+}
+
+.left-button {
+	position: absolute;
+	box-shadow: none;
+    bottom: 0;	
+}
+
+.right-button {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: none;
+    margin-right: 1em;	
+}
+
+.finished-header {
+	display:none;
+	text-align: center;
+	color: red;
+}
+
+#form-data {
+	display: none;
+}
+
+.finale, .form-finished {
+	display: none;
+	vertical-align: top;
+}
+
+.final-font {
+	display: inline-block;
+	width: 40%;
+	margin: 5%;
+}
+
+.side-image {
+	display: inline-block;
+	width: 35%;
+	margin: 5%;
+    margin-top: 8em;	
+}
+
+.filled-form {
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin: 1em 0;
+}
+
+.field-data {
+    font-weight: bold;
+    font-size: 2.2em;
+    line-height: 1.2em;
+}
+
+.entered-data {
+	font-size: 2em;
+}
+
+#closing-fireworks {
+	display: none;
+	width: 100%;
+    border: solid .5em black;
+    border-radius: .6em;	
+}
+
+.food-preferences {
+	margin-top: .6em;
+}
+
+.food-checks {
+    font-size: 2em;
+    text-align: left;
+    margin-left: 40%;
+}
+
+footer {
+	text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+i.fa-copyright {
+    font-size: .8em;
+}
