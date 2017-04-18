@@ -6,23 +6,23 @@
 	<link rel="stylesheet" type="text/css" href="css/styles_potluck.css" />
 	<!-- link to jQuery google CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- link to jQuery validation CDN -->
+	<script src"https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 	<!-- link to external JS file -->
-	<script src="js/scripts_potluck.js"></script>	
+	<script src="js/scripts_potluck.js"></script>
 	<!-- link to FontAwesome CDN -->
 	<script src="https://use.fontawesome.com/44e554c619.js"></script>
 </head>
 
 <body>
 	<!-- info icon to explain sites purpose and goals -->
-	
-	<div class="info-graphic" id="site-info">
-		<i class="fa fa-info fa-lg" id="info-icon" aria-hidden="true"></i>
-		<div class="explaination-window" id="explain-site">
-			<p class="explanation-site" id="explanation-text">This website is a portfolio piece. It displays modal windows, form validation, transitional progress bars and other web development and design features. This is not meant to represent professional design features. It's purpose is to work on the use of HTML, CSS, jQuery and PHP.</p>
-		</div> <!-- end of explaination-window div -->
-	</div> <!-- end of info-graphic div -->
+	<i class="fa fa-info fa-2x" id="font-awesome-info" aria-hidden="true"></i>	
+	<div class="explaination-window" id="explain-site">
+		<h2 class="explanation-close" id="explain-close">[Close]</h2>
+		<p class="explanation-site" id="explanation-text">This website is a portfolio piece. It displays modal windows, form validation, transitional progress bars and other web development and design features. This is not meant to represent professional design features. It's purpose is to work on the use of HTML, CSS and jQuery.</p>
+	</div> <!-- end of explaination-window div -->
 
-	<h1 id="main-head">Happy Fourth of July !</h1>
+	<h1 class="main-header" id="main-head">Happy Fourth of July !</h1>
 	
 	<h2 class="welcome-text" id="second-head">We are excited to have you celebrate and enjoy the holiday with us.</h2>
 
@@ -46,7 +46,7 @@
 		<h1 class="exit">X</h1>
 		<h1 class="modal-text">General Contact Information</h1>
 		<p class="modal-subtext">Please fill out the following information to help us prepare!</p>
-		<form class="form-modal form-modal-1" method="POST" action="#">
+		<form name="modal1" class="form-modal form-modal-1" method="post" action=" ">
 			<p><input name="first-name" placeholder="First Name" class="form-format" type="text" id="first-name"></p>
 			<p><input name="last-name" placeholder="Last Name" class="form-format" type="text" id="last-name"></p>
 			<p><input name="email-contact" placeholder="Contact Email" class="form-format" type="email" id="email"></p>
@@ -89,15 +89,8 @@
 				<h1 class="food-preferences modal-text">Check all that applies:</h1>
 				<p class="food-checks"><input type="checkbox" name="gluten" value="gluten-free" id="gluten-check"> &nbsp; Gluten Free </p>
 				<p class="food-checks"><input type="checkbox" name="vegan" value="vegan-yes" id="vegan-check"> &nbsp; Vegan</p>
-				<p class="food-checks"><input type="checkbox" name="organic" value="organic-yes" id="food-check"> &nbsp; Organic</p>
-<!-- 				<p class="special-food">Gluten Free:</p> 
-				<p class="food-radio"><input type="radio" name="gluten-status" value="yes" class="form-format gluten-check" id="gluten-yes">Yes<input type="radio" name="gluten-status" value="no" class="form-format gluten-check" id="gluten-no">No</p>
-				<p class="special-food">Vegan:</p>
-				<p class="food-radio"><input type="radio" name="vegan-status" value="yes" class="form-format vegan-check" id="vegan-yes">Yes<input type="radio" name="vegan-status" value="no" class="form-format vegan-check" id="vegan-no">No</p>
-				<p class="special-food">Organic:</p> 
-				<p class="food-radio"><input type="radio" name="organic-status" value="yes" class="form-format organic-check" id="organic-yes">Yes</p>
-				<p class="food-radio"><input type="radio" name="organic-status" value="no" class="form-format organic-check" id="organic-no">No</p>
- -->		</form> <!-- end of check-forms form -->
+				<p class="food-checks"><input type="checkbox" name="organic" value="organic-yes" id="organic-check"> &nbsp; Organic</p>
+			</form> <!-- end of check-forms form -->
 		</div> <!-- end of form-alignment div -->	
 		
 		<button class="site-button left-button" id="reverse-1">Previous Window</button>
@@ -117,14 +110,14 @@
 		
 		<!-- display fireworks image -->
 		<div class ="finale side-image">
-			<img src="images/fireworks_2.jpg" alt="Beautiful fireworks." id="closing-fireworks"/>
+			<img src="images/fireworks_2.jpg" alt="Beautiful fireworks." class="fireworks-pic" id="closing-fireworks"/>
 		</div> <!-- end of finale, side-image div -->
 
 		<!-- display font on right side by using div -->
 		<div class="finale final-font" id="font-side">
 			<h1 class="finished-header" id="form-header">We are going to have so much fun!</h1>
 			<p class="filled-form">Below is the information that you provided. Please review it. If something is not right, simply <a href="potluck_party.html" >start over</a>. We look forward to seeing you soon!</p>
-			<div id="form-data"></div>
+			<div class="form-info" id="form-data"></div>
 		</div> <!-- end of finale, final-font div -->
 
 		<!-- create space to display form information -->
@@ -132,7 +125,7 @@
 	</section> <!-- end of form-finished -->
 	
 	<footer>
-		<h5><i class="fa fa-copyright fa-lg" aria-hidden="true"></i> <span class="larger-footer">2016 Kuchinka</span></h5> 
+		<p><i class="fa fa-copyright" aria-hidden="true"></i><span class="larger-footer"> 2017 Kuchinka</span></p> 
 	</footer>
 	
 </body>

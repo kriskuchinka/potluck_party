@@ -10,30 +10,37 @@ body {
 	z-index: 0;
 }
 
-.info-graphic {
-	width: 100%;
-    height: 1em;
+.fa-info {
+    width: 100%;
+    text-align: right;
+    padding: 2%;
 }
 
-.fa-info {
+.explanation-close {
 	float: right;
-	margin-top: 0.8em;
-    margin-right: 0.8em;
+	text-decoration: underline;
+}
+
+.explanation-close:hover {
+	color: white;
 	cursor: pointer;
+}
+
+.explaination-site {
+	float: left;
 }
 
 .explaination-window {
 	display: none;
-	width: 92%;	
-	line-height: 1.2em;
-	margin: 0 4%;
+	background-color: gray;
+	font-size: 1.6em;
+	padding: 2%;
 }
 
-#main-head {
+.main-header {
 	text-align: center;
 	color: red;
-    font-size: 4em;;
-    margin-top: 1.4em;	
+    font-size: 4em;	
 }
 
 .finished-header {
@@ -126,7 +133,7 @@ input.form-format {
 	text-align: right;
 	color: white;
 	cursor: pointer;
-	margin: -.6em -.6em .4em 0em;
+	margin: -.6em -.6em .4em 0;
 }
 
 .suggestions {
@@ -230,7 +237,7 @@ h1.modal-text {
 	color: red;
 }
 
-#form-data {
+.form-info {
 	display: none;
 }
 
@@ -268,7 +275,7 @@ h1.modal-text {
 	font-size: 2em;
 }
 
-#closing-fireworks {
+.fireworks-pic {
 	display: none;
 	width: 100%;
     border: solid .5em black;
@@ -287,10 +294,6 @@ h1.modal-text {
 
 footer {
 	text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 2em;
-}
-
-i.fa-copyright {
-    font-size: .8em;
 }
